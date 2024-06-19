@@ -37,7 +37,7 @@ Manual installation is creating virtual environment using "virtualenv" Python li
 cd Merah_Data_Processing
 pip install virtualenv
 virtualenv -p "%PYTHON PATH%/python.exe" merah_data_processing
-convert_playbook/Scripts/activate
+merah_data_processing/Scripts/activate
 pip install -r requirements.txt
 pip install jupyter notebook
 jupyter notebook "programs/Merah Data Processing.ipynb"
