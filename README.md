@@ -21,9 +21,23 @@ Merah Data Processing uses Python libraries for running properly :
 
 ## Initialization
 
-1. Copy the file "Merah" to directory "files" in CSV format
-2. Replace the "Merah" filename in constant variable 'PATH_FILE_CSV'
-3. Assign number of rows in constant variable 'KELIPATAN_BARIS'
+1. Create a directory "files" in "Merah_Data_Processing"
+2. Copy the file "Merah" to directory "files" in CSV format
+3. Replace the "Merah" filename in constant variable 'PATH_FILE_CSV'
+4. Assign number of rows in constant variable 'KELIPATAN_BARIS'
+
+## Directory Hierarchy
+```
+%PATH%\MERAH DATA PROCESSING\MERAH_DATA_PROCESSING
+│   requirements.txt
+│
+├───files
+│       merah.csv
+│
+└───programs
+        Merah Data Processing.ipynb
+```
+
 
 ## Installation
 
@@ -51,5 +65,5 @@ Automate installation is using Docker to install in docker container.
 mkdir Merah_Data_Processing
 cd Merah_Data_Processing
 docker pull mamanggarox/merahdataprocessing:latest
-docker run -p 8888:8888 mamanggarox/merahdataprocessing:latest --name ContainerMerahDataProcessing
+docker run --name ContainerMerahDataProcessing -p 8888:8888 mamanggarox/merahdataprocessing:latest 
 ```
